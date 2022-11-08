@@ -12,7 +12,7 @@ const createAndWriteOutput = (operator, resultBeforeCalc, calcNumber) => {
     outputResult(currentResult, calcDescription); // From vendor.js
 }
 
-// Generates and writes Entry Log
+// Generates Entry Log
 const writeToLog = (operation, prevResult, number, result) => {
     const logEntry = {
         operation,
