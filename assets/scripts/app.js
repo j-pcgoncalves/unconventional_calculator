@@ -1,14 +1,17 @@
 let currentResult = 0;
 
+// Gets input from input field
 const getUserNumberInput = () => {
     return parseInt(userInput.value);
 }
 
+// Generates and writes calculation log
 const createAndWriteOutput = (operator, resultBeforeCalc, calcNumber) => {
     const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
-    outputResult(currentResult, calcDescription);
+    outputResult(currentResult, calcDescription); // From vendor.js
 }
 
+// Handle button operation
 const add = () => {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
@@ -37,6 +40,7 @@ const divide = () => {
     createAndWriteOutput('/', initialResult, enteredNumber);  
 }
 
+// Event Listeners
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
