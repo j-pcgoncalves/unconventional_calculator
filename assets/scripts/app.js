@@ -1,4 +1,5 @@
-let currentResult = 0;
+const defaultResult = 0;
+let currentResult = defaultResult;
 
 currentResult += 10;
 
